@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48690B11D12C391006491DA /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690B01D12C391006491DA /* ZipCodeTextFieldDelegate.swift */; };
+		C48690B31D12C3B7006491DA /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690B21D12C3B7006491DA /* CashTextFieldDelegate.swift */; };
 		C4A55EC31D0E417B00AA325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A55EC21D0E417B00AA325E /* AppDelegate.swift */; };
 		C4A55EC51D0E417B00AA325E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A55EC41D0E417B00AA325E /* ViewController.swift */; };
 		C4A55EC81D0E417B00AA325E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A55EC61D0E417B00AA325E /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C48690B01D12C391006491DA /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		C48690B21D12C3B7006491DA /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		C4A55EBF1D0E417B00AA325E /* DelegatesChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegatesChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A55EC21D0E417B00AA325E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A55EC41D0E417B00AA325E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				C4A55EC91D0E417B00AA325E /* Assets.xcassets */,
 				C4A55ECB1D0E417B00AA325E /* LaunchScreen.storyboard */,
 				C4A55ECE1D0E417B00AA325E /* Info.plist */,
+				C48690B01D12C391006491DA /* ZipCodeTextFieldDelegate.swift */,
+				C48690B21D12C3B7006491DA /* CashTextFieldDelegate.swift */,
 			);
 			path = DelegatesChallengeApp;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A55EC51D0E417B00AA325E /* ViewController.swift in Sources */,
+				C48690B31D12C3B7006491DA /* CashTextFieldDelegate.swift in Sources */,
+				C48690B11D12C391006491DA /* ZipCodeTextFieldDelegate.swift in Sources */,
 				C4A55EC31D0E417B00AA325E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				C4A55EE91D0E417B00AA325E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A55EEA1D0E417B00AA325E /* Build configuration list for PBXNativeTarget "DelegatesChallengeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				C4A55EEC1D0E417B00AA325E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A55EED1D0E417B00AA325E /* Build configuration list for PBXNativeTarget "DelegatesChallengeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				C4A55EEF1D0E417B00AA325E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

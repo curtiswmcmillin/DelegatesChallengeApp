@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegatesChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGR-yx-mky">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upN-DP-Fpe">
+                                <rect key="frame" x="20" y="58" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-zn-Opg">
+                                <rect key="frame" x="20" y="96" width="497" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afK-Z0-d5t">
+                                <rect key="frame" x="531" y="96" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ohl-zn-Opg" firstAttribute="top" secondItem="upN-DP-Fpe" secondAttribute="bottom" constant="8" symbolic="YES" id="5Ci-eY-Q8c"/>
+                            <constraint firstItem="wGR-yx-mky" firstAttribute="leading" secondItem="upN-DP-Fpe" secondAttribute="leading" id="6u6-oR-haT"/>
+                            <constraint firstItem="wGR-yx-mky" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BZ8-sh-gGZ"/>
+                            <constraint firstItem="wGR-yx-mky" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KlX-qy-Lwl"/>
+                            <constraint firstItem="upN-DP-Fpe" firstAttribute="leading" secondItem="ohl-zn-Opg" secondAttribute="leading" id="M3L-Kk-USe"/>
+                            <constraint firstItem="wGR-yx-mky" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NPI-uY-IKu"/>
+                            <constraint firstItem="upN-DP-Fpe" firstAttribute="top" secondItem="wGR-yx-mky" secondAttribute="bottom" constant="8" symbolic="YES" id="RRk-mH-hKp"/>
+                            <constraint firstItem="upN-DP-Fpe" firstAttribute="trailing" secondItem="afK-Z0-d5t" secondAttribute="trailing" id="Y0b-QW-mbV"/>
+                            <constraint firstItem="ohl-zn-Opg" firstAttribute="top" secondItem="afK-Z0-d5t" secondAttribute="top" id="www-2T-0m0"/>
+                            <constraint firstItem="wGR-yx-mky" firstAttribute="trailing" secondItem="upN-DP-Fpe" secondAttribute="trailing" id="zDS-rh-1eH"/>
+                            <constraint firstItem="afK-Z0-d5t" firstAttribute="leading" secondItem="ohl-zn-Opg" secondAttribute="trailing" constant="14" id="zQM-Dt-9Vc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="editingSwitch" destination="afK-Z0-d5t" id="9gg-Qu-vKy"/>
+                        <outlet property="textField1" destination="wGR-yx-mky" id="utj-VX-VHl"/>
+                        <outlet property="textField2" destination="upN-DP-Fpe" id="sBz-cE-5j6"/>
+                        <outlet property="textField3" destination="ohl-zn-Opg" id="yES-4Q-fCp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="599" y="452"/>
         </scene>
     </scenes>
 </document>
